@@ -1,0 +1,210 @@
+    @import "module/base.scss";
+    @import "module/header.scss";
+    @import "module/footer.scss";
+    main {
+        .nav-title {
+            margin-left: 12%;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #999;
+            a {
+                color: #999;
+            }
+        }
+        .detail {
+            display: flex;
+            border: 1px solid #ccc;
+            height: 605px;
+            margin-top: 40px;
+            width: 76%;
+            margin-left: 12%;
+            .view_bd {
+                width: 480px;
+                height: 480px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                img {
+                    width: 300px;
+                    height: 320px;
+                }
+            }
+            ul {
+                width: 365px;
+                height: 80px;
+                margin-left: 60px;
+                display: flex;
+                justify-content: space-between;
+                >li {
+                    width: 80px;
+                    height: 80px;
+                    border: 1px solid #ccc;
+                    .s {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .description {
+                position: relative;
+                flex: 1;
+                >h2 {
+                    margin-top: 40px;
+                    font-size: 34px;
+                }
+                .rlike {
+                    position: absolute;
+                    width: 22px;
+                    height: 20px;
+                    top: 55px;
+                    right: 22px;
+                    background: url(/img/icon.png ) no-repeat -119px -44px;
+                }
+                .new {
+                    margin-top: 10px;
+                    font-size: 16px;
+                    color: #999;
+                }
+                .price {
+                    margin-top: 20px;
+                    font-size: 16px;
+                    color: red;
+                }
+                .hr {
+                    height: 1px;
+                    width: 450px;
+                    margin-top: 25px;
+                    background: #efefef;
+                }
+                .model {
+                    margin-top: 15px;
+                    display: flex;
+                    span {
+                        width: 45px;
+                        height: 30px;
+                        border: 1px solid #333;
+                        display: block;
+                        margin: 0 7px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        color: #333;
+                        cursor: pointer;
+                    }
+                    span:nth-child(2) {
+                        border-color: #ff9000;
+                        color: #ff9000;
+                    }
+                }
+                .style {
+                    display: flex;
+                    margin-top: 15px;
+                    >p {
+                        margin-top: 7px;
+                    }
+                    span {
+                        width: 90px;
+                        height: 30px;
+                        border: 1px solid #333;
+                        display: block;
+                        margin: 0 7px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        border-color: #ff9000;
+                        color: #ff9000;
+                    }
+                }
+                .clearfix {
+                    display: flex;
+                    margin-top: 22px;
+                    >span {
+                        margin-top: 10px;
+                    }
+                    .count_reduce,
+                    .count_add {
+                        width: 20px;
+                        height: 30px;
+                        border: 1px solid #efefef;
+                        margin-top: 7px;
+                        text-align: center;
+                        line-height: 30px;
+                        color: #ccc;
+                    }
+                    .shop_count {
+                        width: 65px;
+                        height: 30px;
+                        border: none;
+                        border: 1px solid #999;
+                        margin-top: 7px;
+                        text-align: center;
+                    }
+                }
+                .hr {
+                    height: 1px;
+                    width: 450px;
+                    margin-top: 25px;
+                    background: #efefef;
+                }
+                .shopping_btn {
+                    display: flex;
+                    margin-top: 22px;
+                    font-size: 24px;
+                    #buy {
+                        width: 220px;
+                        height: 60px;
+                        display: block;
+                        background: #ff9000;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        color: #fff;
+                    }
+                    #shopcart {
+                        margin-left: 10px;
+                        width: 220px;
+                        height: 60px;
+                        display: block;
+                        background: #efefef;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        color: #999;
+                    }
+                }
+            }
+        }
+        .another {
+            width: 76%;
+            margin-left: 12%;
+            border: 1px solid #999;
+            background-color: #f6f6f6;
+            >ul {
+                display: flex;
+                .produce,
+                .comments {
+                    width: 140px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    background-color: #f6f6f6;
+                    cursor: pointer;
+                }
+            }
+            #content_box {
+                margin-left: 5%;
+                margin-top: 35px;
+                width: 80%;
+                display: flex;
+                img {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+    
+    .choose {
+        border-top: 3px solid red;
+        background-color: #fff !important;
+    }

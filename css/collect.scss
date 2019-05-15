@@ -1,0 +1,87 @@
+    @import "module/base.scss";
+    @import "module/header.scss";
+    @import "module/footer.scss";
+    main {
+        min-width: 1280px;
+        margin-top: 120px;
+        width: 100%;
+        .cart-list {
+            margin-top: 10px;
+            border: 1px solid #999;
+            width: 76%;
+            overflow: hidden;
+            margin-left: 12%;
+            div.left {
+                float: left;
+                p.blank {
+                    height: 44px;
+                    line-height: 44px;
+                    text-align: center;
+                    background: #efefef;
+                    color: #000;
+                    font-size: 14px;
+                    padding: 134px 0px;
+                    margin-bottom: 20px;
+                    a {
+                        color: #ed302a;
+                        text-decoration: underline;
+                    }
+                }
+                ul {
+                    position: relative;
+                    width: 880px;
+                    margin-left: 20px;
+                    li {
+                        padding-left: 10px;
+                        display: flex;
+                        height: 120px;
+                        border-bottom: 1px solid #e2e2e2;
+                        align-items: center;
+                        .name {
+                            font-size: 14px;
+                            margin-left: 10px;
+                            color: #333;
+                        }
+                        img {
+                            width: 88px;
+                            height: 88px;
+                            margin-left: 60px;
+                        }
+                        .price {
+                            font-size: 16px;
+                            color: red;
+                            margin-left: 220px;
+                        }
+                        #right {
+                            margin-left: 250px;
+                            width: 90px;
+                            height: 60px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            font-size: 12px;
+                            .buy {
+                                width: 90px;
+                                height: 25px;
+                                background: #ff9000;
+                                text-align: center;
+                                line-height: 25px;
+                                color: #fff;
+                                cursor: pointer;
+                            }
+                            .cancel {
+                                width: 90px;
+                                height: 25px;
+                                margin-top: 10px;
+                                border: 1px solid #ccc;
+                                background: #efefef;
+                                text-align: center;
+                                line-height: 25px;
+                                color: #a3a399;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

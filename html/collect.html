@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车-街头篮球周边商城</title>
+    <link rel="stylesheet" href="/css/collect.css">
+    <link rel="stylesheet" href="/css/list.css">
+
+</head>
+
+<body>
+    <!-- header容器 -->
+    <header id="header-container"></header>
+    <main>
+        <div class="innerTitle">
+            <h2>产品分类</h2>
+        </div>
+        <p class="innerTopLink"><a href="/">首页</a>>我的收藏</p>
+        <div class="cart-list">
+            <div class="left" id="left">
+
+                <ul id="list-container">
+                    <!-- list容器 -->
+                </ul>
+
+                <script type="text/html" id="cart-template">
+                    {{each cart item}}
+                    <li class="shop-list" data-id="{{item.id}}">
+
+                        <img src="{{item.imgs[0]}}">
+
+                        <div class="name">{{item.title}}</div>
+                        <div class="price">￥{{item.price}}</div>
+                        <div id="right">
+                            <div class="buy"><a href="/html/detail.html">加入购物车</a></div>
+                            <div class="cancel"><a>取消收藏</a></div>
+                        </div>
+
+                    </li>
+                    {{/each}}
+                </script>
+            </div>
+
+        </div>
+        </div>
+
+    </main>
+    <!-- footer容器 -->
+    <footer id="footer-container"></footer>
+    <script src="/lib/requirejs/require.js" data-main="/js/collect.js"></script>
+</body>
+
+</html>

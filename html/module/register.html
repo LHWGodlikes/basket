@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>天游通行证-注册</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body style="background: url(/img/login_newbg.jpg) no-repeat center ;">
+    <div class="logo"></div>
+    <div class="content">
+        <h1>注册通行证</h1>
+        <ul id="register_content">
+            <li style="margin-bottom:21px;">
+                <span class="register_text">通行证</span>
+                <input id="username" name="userName79cc3e960a210509ae3511060c8ee719" maxlength="18" type="text" class="loginInput" size="16" tabindex="1" />
+            </li>
+            <li>
+                <span class="register_text">密码</span>
+                <input id="password" name="password79cc3e960a210509ae3511060c8ee719" type="password" maxlength="16" class="loginInput" tabindex="2" />
+            </li>
+            <li id="ojbk">
+                <span class="register_text">确认密码</span>
+                <input id="passwordOk" name="password79cc3e960a210509ae3511060c8ee719" type="password" maxlength="16" class="loginInput" tabindex="2" />
+            </li>
+            <li class="register_yzm">
+                <span id="cpid" class="nc-container"></span>
+            </li>
+        </ul>
+        <input type="submit" id="register" class="btn_register" style="cursor:pointer;" value="注册" />
+        <div class="link_wrap">
+            已有账号？<a href="/html/module/login.html" target="_blank">去登录</a>
+        </div>
+    </div>
+    </div>
+    <script src="/lib/requirejs/require.js" data-main="/js/register.js"></script>
+</body>
+
+</html>

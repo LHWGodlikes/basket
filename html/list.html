@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>街头篮球周边商城</title>
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+
+<body>
+    <header id="header-container">
+    </header>
+    <main>
+        <div class="innerTitle">
+            <h2>产品分类</h2>
+        </div>
+        <p class="innerTopLink"><a href="/">首页</a>>周边所有产品列表</p>
+        <div id="list-box"></div>
+        <script type="text/html" id="list-template">
+            <ul class="list-item">
+                {{ each list item }}
+                <li>
+                    <a href="/html/detail.html?id={{item.id}}">
+                        <img class="list-imgs" src="{{item.image}}">
+                    </a>
+                    <span id="like"></span>
+                    <p>{{item.title}}</p>
+                    <p>￥{{item.price}}</p>
+                    <a href="/html/detail.html"><button>加入购物车</button><a>
+                </li>
+                {{/each}}
+            </ul>
+        </script>
+        <div class = "rightAd">
+            <a href = ""><img src ="/img/kefjimg.png"/></a>
+                    <img src="/img/kefbg.png" />
+                    <a href="javascirpt:;"><img class="float" src="/img/float.jpg" /></a>
+                    </div>
+
+    </main>
+    <footer id="footer-container">
+
+    </footer>
+    <script src="/lib/requirejs/require.js" data-main="/js/list.js"></script>
+</body>
+
+</html>

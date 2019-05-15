@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车-街头篮球周边商城</title>
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/list.css">
+
+</head>
+
+<body>
+    <!-- header容器 -->
+    <header id="header-container"></header>
+    <main>
+        <div class="innerTitle">
+            <h2>产品分类</h2>
+        </div>
+        <p class="innerTopLink"><a href="/">首页</a>>购物车</p>
+        <div class="cart-list">
+            <div class="left" id="left">
+                <div class="header">
+                    <div id="allCkeck"><input type="checkbox" class="allCheck" />全选</div>
+                    <span>产品</span>
+                    <i>数量</i>
+                    <b>价格</b>
+                    <em>操作</em>
+                </div>
+                <ul id="list-container">
+                    <!-- list容器 -->
+                </ul>
+                <div class="footer">
+
+                </div>
+                <script type="text/html" id="cart-template">
+                    {{each cart item}}
+                    <li class="shop-list" data-id="{{item.id}}">
+                        <input type="checkbox" id="check" />
+                        <img src="{{item.imgs[0]}}">
+                        <div class="info">
+                            <h2>{{item.title}}</h2>
+                            <p>尺码：均码</p>
+                            <p>颜色：彩色</p>
+                        </div>
+
+                        <div class="num">
+                            <span class="reduceNum">-</span>
+                            <input type="text" value="{{item.num}}" class="inputNum">
+                            <span class="addNum">+</span>
+                        </div>
+                        <div class="price">￥{{item.price}}</div>
+                        <div class="operate">
+                            <span class="delete">删除</span>
+                            <span class="collect">收藏</span>
+                        </div>
+                    </li>
+                    {{/each}}
+                </script>
+            </div>
+            <div class="total" id="total">
+
+                <div class="bottom">
+                    <p>全场满199包邮</p>
+                    <p>原价：<span id="prePrice">0</span></p>
+                    <p>优惠：0.00元</p>
+                    <p>总计：<span id="totalMoney">0</span></p>
+                    <p id="settlement">结算</p>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+    <!-- footer容器 -->
+    <footer id="footer-container"></footer>
+    <script src="/lib/requirejs/require.js" data-main="/js/cart.js"></script>
+</body>
+
+</html>

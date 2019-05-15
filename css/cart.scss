@@ -1,0 +1,265 @@
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+main {
+    min-width: 1280px;
+    margin-top: 120px;
+    width: 100%;
+    .cart-list {
+        margin-top: 10px;
+        border: 1px solid #999;
+        width: 76%;
+        overflow: hidden;
+        margin-left: 12%;
+        div.left {
+            float: left;
+            p.blank {
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                background: #efefef;
+                color: #000;
+                font-size: 14px;
+                padding: 134px 0px;
+                margin-bottom: 20px;
+                a {
+                    color: #ed302a;
+                    text-decoration: underline;
+                }
+            }
+            ul {
+                position: relative;
+                width: 880px;
+                margin-left: 20px;
+                li {
+                    padding-left: 10px;
+                    display: flex;
+                    height: 120px;
+                    border-bottom: 1px solid #e2e2e2;
+                    align-items: center;
+                    div.operate {
+                        color: #666;
+                        font-size: 14px;
+                        margin-left: 238px;
+                        span {
+                            cursor: pointer;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    img {
+                        width: 88px;
+                        height: 88px;
+                        margin-left: 60px;
+                        margin-right: 360px;
+                    }
+                    div.info {
+                        position: absolute;
+                        left: 200px;
+                        h2 {
+                            line-height: 24px;
+                            color: #333;
+                            font-size: 14px;
+                        }
+                        p {
+                            color: #999;
+                            line-height: 20px;
+                            font-size: 12px;
+                        }
+                    }
+                    div.price {
+                        position: absolute;
+                        left: 644px;
+                        font-size: 20px;
+                        color: red;
+                        font-weight: bolder;
+                    }
+                    div.num {
+                        width: 88px;
+                        height: 28px;
+                        display: flex;
+                        border: 1px solid #cacaca;
+                        border-radius: 2px;
+                        margin-left: -40px;
+                        input {
+                            border: none;
+                            width: 50px;
+                            text-align: center;
+                            border-left: 1px solid #cacaca;
+                            border-right: 1px solid #cacaca;
+                        }
+                        span {
+                            cursor: pointer;
+                            text-align: center;
+                            line-height: 28px;
+                            background-color: #ededed;
+                            flex: 1;
+                        }
+                    }
+                }
+            }
+            div.header {
+                width: 100%;
+                line-height: 45px;
+                height: 45px;
+                background: #efefef;
+                font-size: 12px;
+                margin-left: 20px;
+                margin-top: 20px;
+                display: flex;
+                span,
+                i,
+                b,
+                em {
+                    display: block;
+                    border-right: 1px solid #fff;
+                    text-align: center;
+                }
+                #allCkeck {
+                    width: 10% !important;
+                }
+                span {
+                    width: 50%;
+                }
+                i {
+                    font-style: normal;
+                    width: 15%
+                }
+                b {
+                    font-weight: normal;
+                    width: 19%;
+                }
+                em {
+                    font-style: normal;
+                    width: 15%;
+                    border: none;
+                }
+            }
+            div.footer {
+                display: flex;
+                justify-content: space-between;
+                height: 44px;
+                div:first-child {
+                    height: 43px;
+                    line-height: 43px;
+                    font-size: 12px;
+                    input {
+                        float: left;
+                        margin-top: 16px;
+                        margin-right: 5px;
+                    }
+                    a {
+                        font-size: 14px;
+                        color: #ed3029;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                div:last-child {
+                    margin-right: 70px;
+                    cursor: pointer;
+                    line-height: 43px;
+                    height: 43px;
+                    color: #999;
+                    font-size: 12px;
+                    text-indent: 44px;
+                    background: url(/img/delete.jpg) no-repeat 28px center;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        div.total {
+            float: right;
+            top: 75px;
+            right: 2.7%;
+            z-index: 50;
+            max-height: 338px;
+            box-sizing: border-box;
+            width: 290px;
+            height: 260px;
+            h3 {
+                font-size: 12px;
+                font-weight: normal;
+                height: 42px;
+                line-height: 42px;
+                padding-left: 33px;
+                background: url(/img/car2.jpg) no-repeat 10px center;
+            }
+            div.bottom {
+                text-align: right;
+                box-sizing: border-box;
+                padding: 10px;
+                margin: 0 auto;
+                width: 266px;
+                background: #fff;
+                border: 1px solid red;
+                >p {
+                    margin-top: 15px;
+                    font-size: 14px;
+                }
+            }
+            p:nth-child(4) {
+                font-size: 20px !important;
+                span {
+                    color: #ed3029;
+                }
+            }
+            p:nth-child(5) {
+                width: 220px;
+                height: 60px;
+                background: #ff9000;
+                margin-left: 30px;
+                text-align: center;
+                line-height: 60px;
+                font-size: 24px !important;
+                color: #fff;
+            }
+            div.promise {
+                margin-top: 20px;
+                display: flex;
+                color: #666;
+                font-size: 12px;
+                div:nth-child(1) {
+                    text-align: center;
+                    line-height: 64px;
+                    width: 60px;
+                    height: 64px;
+                    border-right: 1px solid #e3e1e1;
+                }
+                div:nth-child(2) {
+                    padding-left: 10px;
+                    padding-top: 2px;
+                    p {
+                        line-height: 20px;
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tips {
+    display: none;
+    .warning {
+        width: 410px;
+        height: 170px;
+        background: #fcfcfc;
+        position: fixed;
+        top: 75px;
+        margin-left: -205px;
+        margin-top: -85px;
+        z-index: 70;
+    }
+    .modal-warning {
+        position: fixed;
+        z-index: 65;
+        top: 0;
+        background: #000;
+        opacity: 0.5;
+    }
+}

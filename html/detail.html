@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>商品列表-街头篮球周边商城</title>
+    <link rel="stylesheet" href="/css/detail.css" />
+    <link rel="stylesheet" href="/css/list.css" />
+
+</head>
+
+<body>
+    <!-- header容器 -->
+    <header id="header-container"></header>
+    <main>
+        <!-- 导航标题 -->
+        <div class="innerTitle">
+            <h2>产品分类</h2>
+        </div>
+        <div class="nav-title">
+            <span><a href="/">商城首页</a></span>
+            <span><a href="/html/list.html">>周边所有产品列表</a></span>
+
+            <span id="nav-title">>{{data.title}}</span>
+        </div>
+
+        <!-- detail容器 -->
+        <div class="detail" id="detail"></div>
+        <script type="text/html" id="detail-template">
+
+            <div class="picture">
+
+                <div class="view_thumbs" id="gal1">
+                    <div class="view_bd">
+                        <img class="zoom-img" src="{{data.imgs[0]}}" data-zoom-image="{{data.imgs[0]}}" />
+                    </div>
+                    <ul class="view-ul">
+                        <li class="current">
+                            <a href="javascript:;" data-image="{{data.imgs[0]}}" data-zoom-image="{{data.imgs[0]}}">
+                                <img class="s" src="{{data.imgs[0]}}" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-image="{{data.imgs[1]}}" data-zoom-image="{{data.imgs[1]}}">
+                                <img class="s" src="{{data.imgs[1]}}" /></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-image="{{data.imgs[2]}}" data-zoom-image="{{data.imgs[2]}}">
+                                <img class="s" src="{{data.imgs[2]}}" /></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-image="{{data.imgs[3]}}" data-zoom-image="{{data.imgs[3]}}">
+                                <img class="s" src="{{data.imgs[3]}}" /></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="description">
+                <h2>{{data.title}}</h2>
+                <span class="rlike"></span>
+                <p class="new">新品正式发售</p>
+                <p class="price">价格：<b>￥{{data.price}}</b></p>
+                <div class="hr"></div>
+                <div class="model" id="model">
+                    <p>型号：</p>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <div class="style">
+                    <p>颜色：</p>
+                    <span>球场霸主</span>
+                </div>
+                <div class="clearfix">
+                    <span>购买数量：</span>
+                    <a class=" count_reduce" href="javascript:void(0)">-</a>
+                    <p><input type="text" value="1" id="buyCount" class="shop_count" readonly="readonly" />
+                    </p>
+                    <a class=" count_add" href="javascript:void(0)">+</a>
+                    <span id="count" class="fl">（剩余库存{{data.store}}件）</span></div>
+                <div class="hr"></div>
+                <div class="shopping_btn">
+                    <a id="buy" href="#">立刻购买</a>
+                    <a id="shopcart" href="javascirpt:;">放入购物车</a>
+                </div>
+
+        </script>
+        <div class="rightAd">
+            <a href=""><img src="/img/kefjimg.png" /></a>
+            <img src="/img/kefbg.png" />
+            <a href="javascirpt:;"><img class="float" src="/img/float.jpg" /></a>
+        </div>
+        <div class="another" id="another"></div>
+        <script type="text/html" id="another-template">
+            <ul>
+                <li class="produce choose">产品介绍</li>
+                <li class="comments">用户评论(10)</li>
+            </ul>
+            <div id="content_box">
+                <div id="com_img">
+                    {{each data.imgs item}}
+                    <img src="{{item}}" /> {{/each}}
+                </div>
+                <div id="word">
+                    {{each data.comments item}}
+                    <p>{{item}};</p>
+                    {{/each}}
+                </div>
+            </div>
+
+        </script>
+
+    </main>
+    <!-- footer容器 -->
+    <footer id="footer-container"></footer>
+    <script src="/lib/requirejs/require.js" data-main="/js/detail.js"></script>
+</body>
+
+</html>
